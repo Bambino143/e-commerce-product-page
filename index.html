@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Ecommence</title>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="content">
+        <i class="ri-close-fill close-overlay ri-xl icon-hover"></i>
+        <div class="next">
+          <i class="ri-arrow-right-s-line ri-xl icon-hover"></i>
+        </div>
+        <div class="previous">
+          <i class="ri-arrow-left-s-line ri-xl icon-hover"></i>
+        </div>
+        <div class="product">
+          <img
+            src="images/image-product-1.jpg"
+            alt="product"
+            height="350px"
+            class="img-radius"
+          />
+        </div>
+        <div class="product-thumbnail">
+          <div class="thumbnail active index-0">
+            <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail" class="thumb-0"/>
+          </div>
+          <div class="thumbnail index-1" >
+            <img src="images/image-product-2-thumbnail.jpg" alt="thumbnail" class="thumb-1"/>
+          </div>
+          <div class="thumbnail index-2">
+            <img src="images/image-product-3-thumbnail.jpg" alt="thumbnail" class="thumb-2"/>
+          </div>
+          <div class="thumbnail index-3">
+            <img src="images/image-product-4-thumbnail.jpg" alt="thumbnail" class="thumb-3"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-nav">
+      <i class="ri-close-fill ri-xl icon-hover nav-close"></i>
+      <ul>
+        <li class="mobile-list mobile-list-1"><a href="#">Collection</a></li>
+        <li class="mobile-list mobile-list-2"><a href="#">Men</a></li>
+        <li class="mobile-list mobile-list-3"><a href="#">Women</a></li>
+        <li class="mobile-list mobile-list-4"><a href="#">About</a></li>
+        <li class="mobile-list mobile-list-5"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <header>
+      <nav>
+        <img src="images/icon-menu.svg" alt="menu" class="menu" />
+        <img src="images/logo.svg" alt="logo" height="20px" />
+        <ul class="mobile">
+          <li class="nav-list"><a href="#">Collection</a></li>
+          <li class="nav-list"><a href="#">Men</a></li>
+          <li class="nav-list"><a href="#">Women</a></li>
+          <li class="nav-list"><a href="#">About</a></li>
+          <li class="nav-list"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="cart-avatar">
+        <div class="pop-up">
+          <div class="pop-up-cart">
+            <span>Cart</span>
+          </div>
+          <div class="finalise">
+            <img
+              src="images/image-product-1.jpg"
+              alt="product"
+              height="50px"
+              class="checkout-img"
+            />
+            <div>
+              <div class="p-checkout">Fall Limited Edition Sneakers</div>
+              <div class="p-checkout">
+                $125.00 x <span class="output">3</span> <span class="total">$375.00</span>
+              </div>
+            </div>
+            <i class="ri-delete-bin-line delete ri-xl"></i>
+          </div>
+          <button class="checkout">Checkout</button>
+        </div>
+        <div class="cart">
+          <img src="images/icon-cart.svg" alt="cart" /><span
+            class="item-quantity"
+            ></span
+          >
+        </div>
+        <img
+          src="images/image-avatar.png"
+          alt="avatar"
+          height="50px"
+          class="avatar"
+        />
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="product-view">
+          <div class="product index">
+            <img
+              src="images/image-product-1.jpg"
+              alt="product"
+              height="350px"
+              class="img-radius"
+            />
+            <div class="next-mobile">
+              <i class="ri-arrow-right-s-line ri-xl icon-hover"></i>
+            </div>
+            <div class="previous-mobile">
+              <i class="ri-arrow-left-s-line ri-xl icon-hover"></i>
+            </div>
+          </div>
+          <div class="product-thumbnail">
+            <div class="thumbnail active index-0">
+              <img src="images/image-product-1-thumbnail.jpg" alt="thumbnail" class="thumb-0"/>
+            </div>
+            <div class="thumbnail index-1" >
+              <img src="images/image-product-2-thumbnail.jpg" alt="thumbnail" class="thumb-1"/>
+            </div>
+            <div class="thumbnail index-2">
+              <img src="images/image-product-3-thumbnail.jpg" alt="thumbnail" class="thumb-2"/>
+            </div>
+            <div class="thumbnail index-3">
+              <img src="images/image-product-4-thumbnail.jpg" alt="thumbnail" class="thumb-3"/>
+            </div>
+          </div>
+        </div>
+        <div class="description">
+          <h1 class="p-text">SNEAKER COMPANY</h1>
+          <h1 class="spacing">
+            Fall Limited Edition <br />
+            Sneakers
+          </h1>
+          <p class="p-text">
+            These low-profile sneakers are your perfect casual wear <br />
+            companion. Featuring a durable rubber outer sole. they'll <br />
+            withstand everything the weather can offer.
+          </p>
+          <div class="price-container">
+            <div class="price">
+              <h1>$125.00</h1>
+              <span class="fivety">50%</span>
+            </div>
+            <span class="p-text strike-through">$250.00</span>
+          </div>
+          <div class="add-to-cart">
+            <div class="quantity">
+              <p class="text-quantity">0</p>
+              <button id="minus" ><img src="images/icon-minus.svg" alt="minus" /></button>
+              <button id="plus" ><img src="images/icon-plus.svg" alt="plus" /></button>
+            </div>
+            <a href="#" class="button"
+              ><i class="ri-shopping-cart-2-line 🎉 ri-xl"></i> Add to cart</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
