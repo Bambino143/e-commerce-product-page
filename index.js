@@ -66,6 +66,9 @@ $(document).ready(() => {
       $(".output").text(`${count}`);
       $(".total").text(`$${count * 125}.00`);
     }
+    count = 0;
+    $(".text-quantity").text(`${count}`);
+    $("#minus").prop("disabled", true);
   });
   /*DELETE FROM CART */
   $(del).click(() => {
